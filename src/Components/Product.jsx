@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, memo } from "react";
 import { icons } from "lucide-react";
 import Context from "../Context";
 
@@ -54,4 +54,4 @@ function Product({ product }) {
   );
 }
 
-export default Product;
+export default memo(Product);
